@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="piicuu">
+    <meta name="description" content="Cleaning schedule made by piicuu">
+
+    <title>Limpieza Piso</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <main>
+            <header>
+                <section class="titles">
+                    <h1 class="title">Limpieza del piso</h1>
+                
+                    <h2 class="mes">Tareas a realizar durante el mes de <span id="mes">mes</span></h2>
+                </section>
+
+                <nav class="months-btns buttons">
+                    <button id="monthsButton" class="months-btn button" onclick="showMonthsMenu()">
+                        <span id="monthsButtonText" class="button-text">Meses</span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-symbol">
+                            <path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <div id="monthsMenu" class="months-menu">
+                        <ul id="monthsList" class="months-list"></ul>
+                    </div>
+                </nav>
+            </header>
+        
+            <ul class="task-list">
+                <li class="task-list__item task-list__header">
+                    <div id="test" class="task-list__text checkbox"></div>
+                    <div class="task-list__text responsible">Responsable</div>
+                    <div class="task-list__text">Tarea</div>
+                    <!-- <div class="task-list__text other">Otra información</div> -->
+                </li>
+                <li id="task-list-row-1" class="task-list__item">
+                    <div class="task-list__text checkbox"><input type="checkbox" onclick="checkboxClicked('task-list-row-1')" class="checkbox"></div>
+                    <div class="task-list__text responsible">Alain</div>
+                    <div class="task-list__text"><span class="task"></span></div>
+                    <!-- <div class="task-list__text other">Texto de prueba</div> -->
+                </li>
+                <li id="task-list-row-2" class="task-list__item">
+                    <div class="task-list__text checkbox"><input type="checkbox" onclick="checkboxClicked('task-list-row-2')" class="checkbox"></div>
+                    <div class="task-list__text responsible">Carlos</div>
+                    <div class="task-list__text"><span class="task"></span></div>
+                    <!-- <div class="task-list__text other">Texto de prueba</div> -->
+                </li>
+                <li id="task-list-row-3" class="task-list__item">
+                    <div class="task-list__text checkbox"><input type="checkbox" onclick="checkboxClicked('task-list-row-3')" class="checkbox"></div>
+                    <div class="task-list__text responsible">Pau</div>
+                    <div class="task-list__text"><span class="task"></span></div>
+                    <!-- <div class="task-list__text other">Texto de prueba</div> -->
+                </li>
+                <li id="task-list-row-4" class="task-list__item">
+                    <div class="task-list__text checkbox"><input type="checkbox" onclick="checkboxClicked('task-list-row-4')" class="checkbox"></div>
+                    <div class="task-list__text responsible">Ulises</div>
+                    <div class="task-list__text"><span class="task"></span></div>
+                    <!-- <div class="task-list__text other">Texto de prueba</div> -->
+                </li>
+            </ul>
+
+            <div class="tasks-btns buttons">
+                <button id="clear-tasks-btn" class="tasks-btn button" onclick="clearTasks()">Vaciar tareas</button>
+                <button id="give-tasks-btn" class="tasks-btn button" onclick="newTasks()">Repartir tareas</button>
+            </div>
+        </main>
+
+        <em class="footer">This is an experimental version of the cleaning schedule.</em>
+    </div>
+ 
+</body>
+</html>
