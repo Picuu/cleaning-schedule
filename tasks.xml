@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE months [
+    <!ELEMENT months (month*)>
+    <!ELEMENT month (alain, carlos, pau, ulises)>
+    <!ATTLIST month id ID #REQUIRED>
+    <!ELEMENT alain (#PCDATA)>
+    <!ELEMENT carlos (#PCDATA)>
+    <!ELEMENT pau (#PCDATA)>
+    <!ELEMENT ulises (#PCDATA)>
+]>
+
+<months>
+    <month id="enero">
+        <alain>1</alain>
+        <carlos>2</carlos>
+        <pau>3</pau>
+        <ulises>0</ulises>
+    </month>
+    <month id="febrero">
+        <alain>1</alain>
+        <carlos>3</carlos>
+        <pau>2</pau>
+        <ulises>0</ulises>
+    </month>
+    <month id="marzo">
+        <alain>3</alain>
+        <carlos>0</carlos>
+        <pau>2</pau>
+        <ulises>1</ulises>
+    </month>
+    <month id="abril">
+        <alain>2</alain>
+        <carlos>0</carlos>
+        <pau>1</pau>
+        <ulises>3</ulises>
+    </month>
+    <month id="mayo">
+        <alain>1</alain>
+        <carlos>3</carlos>
+        <pau>0</pau>
+        <ulises>2</ulises>
+    </month>
+    <month id="junio">
+        <alain>0</alain>
+        <carlos>1</carlos>
+        <pau>2</pau>
+        <ulises>3</ulises>
+    </month>
+    <month id="julio">
+        <alain>2</alain>
+        <carlos>1</carlos>
+        <pau>0</pau>
+        <ulises>3</ulises>
+    </month>
+    <month id="agosto">
+        <alain>0</alain>
+        <carlos>2</carlos>
+        <pau>1</pau>
+        <ulises>3</ulises>
+    </month>
+    <month id="septiembre">
+        <alain>2</alain>
+        <carlos>1</carlos>
+        <pau>3</pau>
+        <ulises>0</ulises>
+    </month>
+    <month id="octubre">
+        <alain>0</alain>
+        <carlos>3</carlos>
+        <pau>2</pau>
+        <ulises>1</ulises>
+    </month>
+    <month id="noviembre">
+        <alain>1</alain>
+        <carlos>2</carlos>
+        <pau>0</pau>
+        <ulises>3</ulises>
+    </month>
+    <month id="diciembre">
+        <alain>1</alain>
+        <carlos>0</carlos>
+        <pau>3</pau>
+        <ulises>2</ulises>
+    </month>
+</months>
